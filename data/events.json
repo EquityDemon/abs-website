@@ -1,0 +1,9 @@
+{
+  "upcoming": [
+    { "month": "Jun", "day": "27", "year": "2026", "title": "ABS Summit 2026", "location": "LSE, London", "description": "Our inaugural flagship summit convening 250 professionals, investors, and students around Africa's trade, investment, and economic future.", "time": "09:00 - 18:00" }
+  ],
+  "past": [
+    { "month": "Mar", "day": "31", "year": "2026", "title": "Deploying Capital in Africa: Opportunities and Insights", "location": "CBG 1.01 & SAL, LSE", "description": "Finance panel with leaders from Bank of America, British International Investment, and Moody's, followed by networking.", "time": "19:00" },
+    { "month": "Mar", "day": "11", "year": "2026", "title": "CBS x ABS Seychelles Governor Fireside Chat", "location": "CBG 1.02, LSE", "description": "A fireside chat with Governor Caroline Abel of the Central Bank of Seychelles.", "time": "18:00" }
+  ]
+}

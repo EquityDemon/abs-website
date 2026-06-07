@@ -1,0 +1,88 @@
+backend:
+  name: github
+  repo: EquityDemon/abs-website
+  branch: main
+  base_url: https://abs-website-one.vercel.app
+  auth_endpoint: /api/auth
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+site_url: https://abs-website-one.vercel.app
+display_url: https://abs-website-one.vercel.app
+
+collections:
+  - name: reports
+    label: Reports
+    files:
+      - name: reports
+        label: Reports list
+        file: data/reports.json
+        description: "Published research reports shown on the Reports page."
+        fields:
+          - label: Reports
+            name: items
+            widget: list
+            label_singular: Report
+            summary: "{{fields.title}} — {{fields.sector}}"
+            fields:
+              - { label: Sector, name: sector, widget: select, options: ["Finance", "Technology", "Energy", "Real Estate"] }
+              - { label: Date, name: date, widget: string, hint: "e.g. Mar 2026" }
+              - { label: Title, name: title, widget: string }
+              - { label: Author, name: author, widget: string }
+              - { label: Role, name: role, widget: string, hint: "e.g. Head of Finance" }
+              - { label: PDF link, name: pdf, widget: string, required: false, default: "#", hint: "Paste a link to the report PDF, or leave as #" }
+
+  - name: events
+    label: Events
+    files:
+      - name: events
+        label: Events list
+        file: data/events.json
+        description: "Upcoming and past events shown on the Events page."
+        fields:
+          - label: Upcoming events
+            name: upcoming
+            widget: list
+            label_singular: Upcoming event
+            summary: "{{fields.title}} ({{fields.month}} {{fields.day}})"
+            fields:
+              - { label: Month, name: month, widget: string, hint: "e.g. Jun" }
+              - { label: Day, name: day, widget: string, hint: "e.g. 27" }
+              - { label: Year, name: year, widget: string, hint: "e.g. 2026" }
+              - { label: Title, name: title, widget: string }
+              - { label: Location, name: location, widget: string }
+              - { label: Description, name: description, widget: text }
+              - { label: Time, name: time, widget: string, hint: "e.g. 18:00 or 09:00 - 18:00" }
+          - label: Past events
+            name: past
+            widget: list
+            label_singular: Past event
+            summary: "{{fields.title}} ({{fields.month}} {{fields.day}})"
+            fields:
+              - { label: Month, name: month, widget: string }
+              - { label: Day, name: day, widget: string }
+              - { label: Year, name: year, widget: string }
+              - { label: Title, name: title, widget: string }
+              - { label: Location, name: location, widget: string }
+              - { label: Description, name: description, widget: text }
+              - { label: Time, name: time, widget: string }
+
+  - name: team
+    label: Team
+    files:
+      - name: team
+        label: Team members
+        file: data/team.json
+        description: "Committee members shown on the About page."
+        fields:
+          - label: Members
+            name: items
+            widget: list
+            label_singular: Member
+            summary: "{{fields.name}} — {{fields.role}}"
+            fields:
+              - { label: Name, name: name, widget: string }
+              - { label: Role, name: role, widget: string, hint: "e.g. President" }
+              - { label: LinkedIn URL, name: linkedin, widget: string, required: false }
+              - { label: Photo, name: photo, widget: image, hint: "Square photo works best" }

@@ -1,0 +1,10 @@
+{
+  "items": [
+    { "sector": "Finance", "date": "Mar 2026", "title": "Nigeria's Fintech Landscape: Growth & Regulation", "author": "Kenya Lawrence", "role": "Head of Finance", "pdf": "#" },
+    { "sector": "Energy", "date": "Feb 2026", "title": "Renewable Energy Investment in East Africa", "author": "Musab Mohamed & James Trenchard", "role": "Heads of Energy", "pdf": "#" },
+    { "sector": "Technology", "date": "Jan 2026", "title": "AI Adoption Across African Markets", "author": "Bongani Masilela", "role": "Head of Technology", "pdf": "#" },
+    { "sector": "Real Estate", "date": "Dec 2025", "title": "Commercial Property Boom in Lagos", "author": "Moritz Elleke", "role": "Head of Real Estate", "pdf": "#" },
+    { "sector": "Finance", "date": "Nov 2025", "title": "Mobile Money & Financial Inclusion in West Africa", "author": "Nifemi Adenuga", "role": "Head of Finance", "pdf": "#" },
+    { "sector": "Technology", "date": "Oct 2025", "title": "Africa's Data Centre Expansion", "author": "Victoria Dent", "role": "Head of Technology", "pdf": "#" }
+  ]
+}
